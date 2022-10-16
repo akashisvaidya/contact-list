@@ -1,0 +1,13 @@
+.wrapper {
+  min-height: 100vh;
+}
+i {
+  background: rgb(38, 159, 239);
+  width: 30px;
+  height: 30px;
+  color: aliceblue;
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 2px;
+  border-radius: 50%;
+}

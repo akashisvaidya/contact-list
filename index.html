@@ -24,7 +24,56 @@
     <title>Contact list</title>
   </head>
   <body>
-    <div class="btn btn-primary">slll<i class="fa-solid fa-ghost"></i></div>
+    <div class="wrapper">
+      <div class="container">
+        <!-- title -->
+        <div class="row py-4 text-center">
+          <div class="col">
+            <h1>Contact List API</h1>
+          </div>
+        </div>
+
+        <!-- filter area -->
+
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Name"
+              onkeyup="handleOnSearch(this)"
+            />
+          </div>
+          <div class="col">
+            <select
+              name=""
+              id=""
+              class="form-control"
+              onchange="handleOnChange(this)"
+            >
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- contact list area -->
+        <div class="row mt-5">
+          <div class="col">
+            <p><span id="user-count">0</span> Users Found!</p>
+            <div
+              class="d-flex justify-content-around flex-wrap gap-2"
+              id="list"
+            >
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
