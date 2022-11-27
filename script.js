@@ -12,6 +12,7 @@ const fetchUser = (query) => {
     .catch((error) => {
       console.log(error);
     });
+  console.log(query);
 };
 fetchUser();
 const display = (users) => {
@@ -71,3 +72,4 @@ const handleOnChange = (e) => {
   console.log(value);
   fetchUser(query);
 };
+//comment
